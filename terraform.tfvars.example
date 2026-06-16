@@ -1,10 +1,13 @@
-cloudflare_account_id = "00000000000000000000000000000000"
-cloudflare_zone_id    = "00000000000000000000000000000000"
+# The v8s.link account, zone, hostname, and Worker name have committed defaults
+# in variables.tf. Override them only when testing this config against another
+# Cloudflare account or zone.
+cloudflare_account_id = "48aa42c6cec6d260e6f97abf3d8cdc6b"
+cloudflare_zone_id    = "60fc561443676fe33f3c195b766a3418"
 apex_hostname         = "v8s.link"
 worker_name           = "v8s-link"
 
 maintainer_emails = [
-  "owner@example.com",
+  "maintainer@example.com",
 ]
 
 enable_ai_crawler_block_rule = false
